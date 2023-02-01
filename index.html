@@ -3,43 +3,58 @@
 <head>
 	<title>Mark Angelo Atienza</title>
 	<meta name="author" content="Mark Angelo Atienza">
-	<link rel="stylesheet" href="styles.css" />
-	<style>
-		a {
-			color: green;
-			padding-right: 20px;
-		}
+	<link rel="stylesheet" href="./styles/styles.css" />
 
-		main {
-			background-color: coral;
-		}
-
-		header {
-			background-color: cyan;
-		}
-	</style>
 </head>
 <body>
 <header>
 	<nav>
-		<a href="index.html">Home</a>
+		<a href="index.html" class="color-green">Home</a>
 		<a href="about.html">About</a>
 		<a href="contact-us.html">Contact</a>
 	</nav>
 </header>
 <main>
 <section>
-	<article>
-		<h1 style="color:red; font-size: 54px;">This is title of the article</h1>
+	<article class="article-section">
+		<h1 class="header1">This is title of the article</h1>
 		<div class="author" id="author-1">
-			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRooEnD32-UtBw55GBfDTxxUZApMhWWnRaoLw&usqp=CAU" alt="image banner" height=200/>
-<br/>
-		<small>Mark Angelo Atienza</small>
+			<!-- overflow - is when an object/content inside a pre-defined container exceeds outside it -->
+			<div 
+				style="
+					width : 100px; 
+					height: 100px;
+					border: 2px solid black;
+					overflow: hidden;
+				">
+				<img 
+					style="
+						width:100%;
+						height:100%;
+					"
+				src="https://www.treasury.gov.ph/wp-content/uploads/2022/01/male-placeholder-image.jpeg" alt="">
+		
+			</div>
+	<br/>
+		<small 
+			class="header1"
+		>Mark Angelo Atienza</small>
 		</div>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget mauris orci. Pellentesque consequat, justo ac molestie scelerisque, est est molestie mauris, et rutrum magna quam vitae nulla. Praesent fermentum ipsum nec nibh lobortis, malesuada bibendum turpis malesuada. Donec viverra, justo commodo placerat sollicitudin, justo odio dapibus tellus, vel varius lorem nisi quis purus. Mauris posuere porta purus, accumsan egestas ex interdum vitae. Nullam sodales magna elit, ac vulputate sem sodales ut. Sed quis turpis et metus mollis placerat. Sed semper orci eu lacus facilisis porttitor. Nullam tempor lectus in nulla mattis bibendum. Sed vitae ultrices lorem, in ornare lorem. Proin iaculis orci ac ligula malesuada dignissim. Nunc quis est risus.</p>
-		<p>Etiam nec dui et nisi laoreet ornare. Curabitur sit amet finibus justo, sit amet sollicitudin neque. Duis blandit ultricies nisl, ut gravida dolor fermentum malesuada. Vestibulum vestibulum justo sit amet ipsum aliquam ultrices. Vestibulum mollis in risus sit amet pulvinar. Nullam enim eros, pharetra sed est quis, gravida pulvinar lorem. Curabitur interdum metus non consequat pellentesque. Suspendisse tempor, nisi non porta feugiat, tortor massa finibus tellus, non tempor enim enim vitae risus.	
+		<h1>SECOND HEADER</h1>
+		<p class="yellow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget mauris orci. Pellentesque consequat, justo ac molestie scelerisque, est est molestie mauris, et rutrum magna quam vitae nulla. Praesent fermentum ipsum nec nibh lobortis, malesuada bibendum turpis malesuada. Donec viverra, justo commodo placerat sollicitudin, justo odio dapibus tellus, vel varius lorem nisi quis purus. Mauris posuere porta purus, accumsan egestas ex interdum vitae. Nullam sodales magna elit, ac vulputate sem sodales ut. Sed quis turpis et metus mollis placerat. Sed semper orci eu lacus facilisis porttitor. Nullam tempor lectus in nulla mattis bibendum. Sed vitae ultrices lorem, in ornare lorem. Proin iaculis orci ac ligula malesuada dignissim. Nunc quis est risus.</p>
+		<p class="green font-weight-bold">Etiam nec dui et nisi laoreet ornare. Curabitur sit amet finibus justo, sit amet sollicitudin neque. Duis blandit ultricies nisl, ut gravida dolor fermentum malesuada. Vestibulum vestibulum justo sit amet ipsum aliquam ultrices. Vestibulum mollis in risus sit amet pulvinar. Nullam enim eros, pharetra sed est quis, gravida pulvinar lorem. Curabitur interdum metus non consequat pellentesque. Suspendisse tempor, nisi non porta feugiat, tortor massa finibus tellus, non tempor enim enim vitae risus.	
 		</p>
 	</article>
+</section>
+
+<section>
+	<ul class="nav-links">
+		<li class="green">
+			<a class="green" href="#">Home</a>
+		</li>
+		<li><a href="#">Menu</a></li>
+		<li><a href="#">Blog</a></li>
+ 	</ul>
 </section>
 </main>
 <footer>
