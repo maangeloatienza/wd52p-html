@@ -1,4 +1,7 @@
-
+* {
+  /* setting the font-style from google fonts */
+  font-family: 'Sassy Frass', sans-serif;
+}
 
 body {
   /* adding bg image */
