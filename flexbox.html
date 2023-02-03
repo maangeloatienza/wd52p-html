@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLEXBOX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/flex.css">
+</head>
+<body>
+  <!-- header and nav -->
+  <header>
+    <nav>
+      <a href="flexbox.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="#">Contact us</a>
+    </nav>
+  </header>
+  
+  <main class="main-container">
+    <section class="banner">
+      <p class="banner-header">Flexbox or Flexible box</p>
+      <p class="banner-text">Flexbox is all about arranging a group of items in a row or column, and giving us a ridiculous amount of control over the distribution and alignment of those items. As the name suggests, Flexbox is all about flexibility. We can control whether items grow or shrink, how the extra space is distributed, and more.
+      </p>
+    </section>
+    <section class="container">
+      <div class="articles">
+        <article class="content" id="article-1">
+          <h1>First article</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed rutrum velit. Mauris nibh sapien, pellentesque a lectus eget, pretium volutpat nibh. Curabitur lobortis felis a cursus luctus. Proin eget interdum ex. Fusce quis luctus arcu. Curabitur lorem mi, volutpat nec magna et, egestas ultrices dui. Praesent tempor imperdiet sapien.
+
+Aenean eu erat mi. Donec nulla diam, efficitur a nulla sit amet, malesuada facilisis urna. Donec ac tincidunt erat. Aenean tincidunt, velit quis tristique semper, libero augue elementum arcu, vitae viverra magna purus quis dolor. Suspendisse ut condimentum nunc. Suspendisse euismod lorem eget diam facilisis, sed laoreet dui fermentum. Aliquam convallis vehicula quam eu pulvinar. Mauris tempor sollicitudin sem. Aliquam erat volutpat.
+
+Maecenas vel metus diam. Nulla facilisi. Pellentesque laoreet dui quis tortor posuere posuere. Sed blandit imperdiet rutrum. Proin viverra nibh ac auctor feugiat. Sed quis tellus ac enim scelerisque dictum eu in augue. Nunc luctus arcu id nibh aliquam sollicitudin. Praesent a enim vitae libero tempor faucibus nec et mi. Curabitur egestas purus vel odio gravida, eget sodales odio fermentum. Suspendisse eleifend lorem at nunc hendrerit, sed maximus ante convallis. Duis mollis tortor tortor, in congue nibh accumsan ac. Maecenas pretium malesuada ligula vitae sollicitudin.
+
+Phasellus ante purus, vestibulum sed neque vel, porttitor interdum quam. Fusce porttitor laoreet justo. Ut tempus massa lacus, sit amet mattis odio euismod non. Pellentesque malesuada dui sed nulla elementum, a tincidunt quam sodales. Nam in tempor quam, sit amet sodales tortor. Integer ut elementum arcu, non hendrerit mauris. Donec consequat fermentum lorem ac egestas.
+
+Quisque venenatis nisl mollis mi molestie, sed laoreet libero mollis. Donec semper accumsan est a ornare. Integer lacinia sed ex ut bibendum. Praesent cursus, nulla non aliquet finibus, ex nunc posuere libero, fringilla congue orci purus nec nisl. Nam finibus condimentum mollis. Donec et hendrerit magna. Sed iaculis nibh et sem sollicitudin, id aliquam elit luctus. Donec porttitor gravida enim vitae maximus. Nulla egestas mauris at ultrices malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis ac lectus sagittis, gravida ipsum eu, gravida nunc. Cras vel euismod velit. In blandit consequat luctus. Donec nec suscipit nibh. .</p>
+        </article>
+        <article class="content" id="article-2">
+          <h1>Second article</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed rutrum velit. Mauris nibh sapien, pellentesque a lectus eget, pretium volutpat nibh. Curabitur lobortis felis a cursus luctus. Proin eget interdum ex. Fusce quis luctus arcu. Curabitur lorem mi, volutpat nec magna et, egestas ultrices dui. Praesent tempor imperdiet sapien.
+
+Aenean eu erat mi. Donec nulla diam, efficitur a nulla sit amet, malesuada facilisis urna. Donec ac tincidunt erat. Aenean tincidunt, velit quis tristique semper, libero augue elementum arcu, vitae viverra magna purus quis dolor. Suspendisse ut condimentum nunc. Suspendisse euismod lorem eget diam facilisis, sed laoreet dui fermentum. Aliquam convallis vehicula quam eu pulvinar. Mauris tempor sollicitudin sem. Aliquam erat volutpat.
+
+Maecenas vel metus diam. Nulla facilisi. Pellentesque laoreet dui quis tortor posuere posuere. Sed blandit imperdiet rutrum. Proin viverra nibh ac auctor feugiat. Sed quis tellus ac enim scelerisque dictum eu in augue. Nunc luctus arcu id nibh aliquam sollicitudin. Praesent a enim vitae libero tempor faucibus nec et mi. Curabitur egestas purus vel odio gravida, eget sodales odio fermentum. Suspendisse eleifend lorem at nunc hendrerit, sed maximus ante convallis. Duis mollis tortor tortor, in congue nibh accumsan ac. Maecenas pretium malesuada ligula vitae sollicitudin.
+
+Phasellus ante purus, vestibulum sed neque vel, porttitor interdum quam. Fusce porttitor laoreet justo. Ut tempus massa lacus, sit amet mattis odio euismod non. Pellentesque malesuada dui sed nulla elementum, a tincidunt quam sodales. Nam in tempor quam, sit amet sodales tortor. Integer ut elementum arcu, non hendrerit mauris. Donec consequat fermentum lorem ac egestas.
+
+Quisque venenatis nisl mollis mi molestie, sed laoreet libero mollis. Donec semper accumsan est a ornare. Integer lacinia sed ex ut bibendum. Praesent cursus, nulla non aliquet finibus, ex nunc posuere libero, fringilla congue orci purus nec nisl. Nam finibus condimentum mollis. Donec et hendrerit magna. Sed iaculis nibh et sem sollicitudin, id aliquam elit luctus. Donec porttitor gravida enim vitae maximus. Nulla egestas mauris at ultrices malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis ac lectus sagittis, gravida ipsum eu, gravida nunc. Cras vel euismod velit. In blandit consequat luctus. Donec nec suscipit nibh. .</p>
+        </article>
+        <article class="content" id="article-3">
+          <h1>Third article</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed rutrum velit. Mauris nibh sapien, pellentesque a lectus eget, pretium volutpat nibh. Curabitur lobortis felis a cursus luctus. Proin eget interdum ex. Fusce quis luctus arcu. Curabitur lorem mi, volutpat nec magna et, egestas ultrices dui. Praesent tempor imperdiet sapien.
+
+Aenean eu erat mi. Donec nulla diam, efficitur a nulla sit amet, malesuada facilisis urna. Donec ac tincidunt erat. Aenean tincidunt, velit quis tristique semper, libero augue elementum arcu, vitae viverra magna purus quis dolor. Suspendisse ut condimentum nunc. Suspendisse euismod lorem eget diam facilisis, sed laoreet dui fermentum. Aliquam convallis vehicula quam eu pulvinar. Mauris tempor sollicitudin sem. Aliquam erat volutpat.
+
+Maecenas vel metus diam. Nulla facilisi. Pellentesque laoreet dui quis tortor posuere posuere. Sed blandit imperdiet rutrum. Proin viverra nibh ac auctor feugiat. Sed quis tellus ac enim scelerisque dictum eu in augue. Nunc luctus arcu id nibh aliquam sollicitudin. Praesent a enim vitae libero tempor faucibus nec et mi. Curabitur egestas purus vel odio gravida, eget sodales odio fermentum. Suspendisse eleifend lorem at nunc hendrerit, sed maximus ante convallis. Duis mollis tortor tortor, in congue nibh accumsan ac. Maecenas pretium malesuada ligula vitae sollicitudin.
+
+Phasellus ante purus, vestibulum sed neque vel, porttitor interdum quam. Fusce porttitor laoreet justo. Ut tempus massa lacus, sit amet mattis odio euismod non. Pellentesque malesuada dui sed nulla elementum, a tincidunt quam sodales. Nam in tempor quam, sit amet sodales tortor. Integer ut elementum arcu, non hendrerit mauris. Donec consequat fermentum lorem ac egestas.
+
+Quisque venenatis nisl mollis mi molestie, sed laoreet libero mollis. Donec semper accumsan est a ornare. Integer lacinia sed ex ut bibendum. Praesent cursus, nulla non aliquet finibus, ex nunc posuere libero, fringilla congue orci purus nec nisl. Nam finibus condimentum mollis. Donec et hendrerit magna. Sed iaculis nibh et sem sollicitudin, id aliquam elit luctus. Donec porttitor gravida enim vitae maximus. Nulla egestas mauris at ultrices malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis ac lectus sagittis, gravida ipsum eu, gravida nunc. Cras vel euismod velit. In blandit consequat luctus. Donec nec suscipit nibh. .</p>
+        </article>
+        <article class="content" id="article-4">
+          <h1>Fourth Article</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed rutrum velit. Mauris nibh sapien, pellentesque a lectus eget, pretium volutpat nibh. Curabitur lobortis felis a cursus luctus. Proin eget interdum ex. Fusce quis luctus arcu. Curabitur lorem mi, volutpat nec magna et, egestas ultrices dui. Praesent tempor imperdiet sapien.
+
+Aenean eu erat mi. Donec nulla diam, efficitur a nulla sit amet, malesuada facilisis urna. Donec ac tincidunt erat. Aenean tincidunt, velit quis tristique semper, libero augue elementum arcu, vitae viverra magna purus quis dolor. Suspendisse ut condimentum nunc. Suspendisse euismod lorem eget diam facilisis, sed laoreet dui fermentum. Aliquam convallis vehicula quam eu pulvinar. Mauris tempor sollicitudin sem. Aliquam erat volutpat.
+
+Maecenas vel metus diam. Nulla facilisi. Pellentesque laoreet dui quis tortor posuere posuere. Sed blandit imperdiet rutrum. Proin viverra nibh ac auctor feugiat. Sed quis tellus ac enim scelerisque dictum eu in augue. Nunc luctus arcu id nibh aliquam sollicitudin. Praesent a enim vitae libero tempor faucibus nec et mi. Curabitur egestas purus vel odio gravida, eget sodales odio fermentum. Suspendisse eleifend lorem at nunc hendrerit, sed maximus ante convallis. Duis mollis tortor tortor, in congue nibh accumsan ac. Maecenas pretium malesuada ligula vitae sollicitudin.
+
+Phasellus ante purus, vestibulum sed neque vel, porttitor interdum quam. Fusce porttitor laoreet justo. Ut tempus massa lacus, sit amet mattis odio euismod non. Pellentesque malesuada dui sed nulla elementum, a tincidunt quam sodales. Nam in tempor quam, sit amet sodales tortor. Integer ut elementum arcu, non hendrerit mauris. Donec consequat fermentum lorem ac egestas.
+
+Quisque venenatis nisl mollis mi molestie, sed laoreet libero mollis. Donec semper accumsan est a ornare. Integer lacinia sed ex ut bibendum. Praesent cursus, nulla non aliquet finibus, ex nunc posuere libero, fringilla congue orci purus nec nisl. Nam finibus condimentum mollis. Donec et hendrerit magna. Sed iaculis nibh et sem sollicitudin, id aliquam elit luctus. Donec porttitor gravida enim vitae maximus. Nulla egestas mauris at ultrices malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis ac lectus sagittis, gravida ipsum eu, gravida nunc. Cras vel euismod velit. In blandit consequat luctus. Donec nec suscipit nibh. .</p>
+        </article>
+        <article class="content" id="article-5">
+          <h1>Fifth article</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed rutrum velit. Mauris nibh sapien, pellentesque a lectus eget, pretium volutpat nibh. Curabitur lobortis felis a cursus luctus. Proin eget interdum ex. Fusce quis luctus arcu. Curabitur lorem mi, volutpat nec magna et, egestas ultrices dui. Praesent tempor imperdiet sapien.
+
+Aenean eu erat mi. Donec nulla diam, efficitur a nulla sit amet, malesuada facilisis urna. Donec ac tincidunt erat. Aenean tincidunt, velit quis tristique semper, libero augue elementum arcu, vitae viverra magna purus quis dolor. Suspendisse ut condimentum nunc. Suspendisse euismod lorem eget diam facilisis, sed laoreet dui fermentum. Aliquam convallis vehicula quam eu pulvinar. Mauris tempor sollicitudin sem. Aliquam erat volutpat.
+
+Maecenas vel metus diam. Nulla facilisi. Pellentesque laoreet dui quis tortor posuere posuere. Sed blandit imperdiet rutrum. Proin viverra nibh ac auctor feugiat. Sed quis tellus ac enim scelerisque dictum eu in augue. Nunc luctus arcu id nibh aliquam sollicitudin. Praesent a enim vitae libero tempor faucibus nec et mi. Curabitur egestas purus vel odio gravida, eget sodales odio fermentum. Suspendisse eleifend lorem at nunc hendrerit, sed maximus ante convallis. Duis mollis tortor tortor, in congue nibh accumsan ac. Maecenas pretium malesuada ligula vitae sollicitudin.
+
+Phasellus ante purus, vestibulum sed neque vel, porttitor interdum quam. Fusce porttitor laoreet justo. Ut tempus massa lacus, sit amet mattis odio euismod non. Pellentesque malesuada dui sed nulla elementum, a tincidunt quam sodales. Nam in tempor quam, sit amet sodales tortor. Integer ut elementum arcu, non hendrerit mauris. Donec consequat fermentum lorem ac egestas.
+
+Quisque venenatis nisl mollis mi molestie, sed laoreet libero mollis. Donec semper accumsan est a ornare. Integer lacinia sed ex ut bibendum. Praesent cursus, nulla non aliquet finibus, ex nunc posuere libero, fringilla congue orci purus nec nisl. Nam finibus condimentum mollis. Donec et hendrerit magna. Sed iaculis nibh et sem sollicitudin, id aliquam elit luctus. Donec porttitor gravida enim vitae maximus. Nulla egestas mauris at ultrices malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis ac lectus sagittis, gravida ipsum eu, gravida nunc. Cras vel euismod velit. In blandit consequat luctus. Donec nec suscipit nibh. .</p>
+        </article>
+        <article class="content" id="article-6">
+          <h1>Sixth Article</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed rutrum velit. Mauris nibh sapien, pellentesque a lectus eget, pretium volutpat nibh. Curabitur lobortis felis a cursus luctus. Proin eget interdum ex. Fusce quis luctus arcu. Curabitur lorem mi, volutpat nec magna et, egestas ultrices dui. Praesent tempor imperdiet sapien.
+
+Aenean eu erat mi. Donec nulla diam, efficitur a nulla sit amet, malesuada facilisis urna. Donec ac tincidunt erat. Aenean tincidunt, velit quis tristique semper, libero augue elementum arcu, vitae viverra magna purus quis dolor. Suspendisse ut condimentum nunc. Suspendisse euismod lorem eget diam facilisis, sed laoreet dui fermentum. Aliquam convallis vehicula quam eu pulvinar. Mauris tempor sollicitudin sem. Aliquam erat volutpat.
+
+Maecenas vel metus diam. Nulla facilisi. Pellentesque laoreet dui quis tortor posuere posuere. Sed blandit imperdiet rutrum. Proin viverra nibh ac auctor feugiat. Sed quis tellus ac enim scelerisque dictum eu in augue. Nunc luctus arcu id nibh aliquam sollicitudin. Praesent a enim vitae libero tempor faucibus nec et mi. Curabitur egestas purus vel odio gravida, eget sodales odio fermentum. Suspendisse eleifend lorem at nunc hendrerit, sed maximus ante convallis. Duis mollis tortor tortor, in congue nibh accumsan ac. Maecenas pretium malesuada ligula vitae sollicitudin.
+
+Phasellus ante purus, vestibulum sed neque vel, porttitor interdum quam. Fusce porttitor laoreet justo. Ut tempus massa lacus, sit amet mattis odio euismod non. Pellentesque malesuada dui sed nulla elementum, a tincidunt quam sodales. Nam in tempor quam, sit amet sodales tortor. Integer ut elementum arcu, non hendrerit mauris. Donec consequat fermentum lorem ac egestas.
+
+Quisque venenatis nisl mollis mi molestie, sed laoreet libero mollis. Donec semper accumsan est a ornare. Integer lacinia sed ex ut bibendum. Praesent cursus, nulla non aliquet finibus, ex nunc posuere libero, fringilla congue orci purus nec nisl. Nam finibus condimentum mollis. Donec et hendrerit magna. Sed iaculis nibh et sem sollicitudin, id aliquam elit luctus. Donec porttitor gravida enim vitae maximus. Nulla egestas mauris at ultrices malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis ac lectus sagittis, gravida ipsum eu, gravida nunc. Cras vel euismod velit. In blandit consequat luctus. Donec nec suscipit nibh. .</p>
+        </article>
+      </div>
+       <!-- side bar -->
+      <aside>
+        <ul>
+          <li><a href="#article-1">First Article</a></li>
+          <li><a href="#article-2">Second Article</a></li>
+          <li><a href="#article-3">Third Article</a></li>
+          <li><a href="#article-4">Fourth Article</a></li>
+          <li><a href="#article-5">Fifth Article</a></li>
+          <li><a href="#article-6">Sixth Article</a></li>
+        </ul>
+      </aside>
+    </section>
+   
+  </main>  
+</body>
+</html>
