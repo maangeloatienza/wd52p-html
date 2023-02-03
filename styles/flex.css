@@ -1,6 +1,7 @@
 :root {
   --main-color : #133c55;
   --secondary-color : #386fa4;
+  --dark-color : #000000;
   --light-color : #91e5f6;
   --text-color: #ffffff;
 }
@@ -23,8 +24,8 @@ nav {
   /* set width in flexbox using flex-basis */
   flex-basis: 100%;
   /* center items vertically and horizontally */
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* x-axis*/
+  align-items: center; /* y-axis*/
   background-color: var(--secondary-color);
   flex-grow: 1;
 }
@@ -38,7 +39,7 @@ nav > a {
 }
 
 nav > a:hover {
-  color: var(--text-color);
+  color: var(--light-color);
 }
 
 a:visited {
@@ -117,7 +118,7 @@ aside {
   z-index:3;
   background-color: #ffffff;
   margin: 0 auto;
-  flex: 1 1 20%;
+  flex: 1 1 18%;
 }
 
 aside > ul > li {
@@ -148,8 +149,9 @@ aside > ul > li >a:hover {
 
 /* even columns */
 #even-columns{
+  /* display flex should be defined inside parent element */
   display: flex;
-  gap: 10px;
+  gap: 5px;
 }
 
 #even-columns > * {
@@ -159,6 +161,7 @@ aside > ul > li >a:hover {
 .cards {
   border : 2px solid black;
   min-height: 100px;
+  /* border-radius: 20px; */
   /* min-width: 100px; */
 }
 
