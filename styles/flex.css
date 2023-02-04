@@ -6,6 +6,7 @@
   --text-color: #ffffff;
 }
 
+/*  setting the default margin, padding, font-family */
 * {
   font-family : 'Righteous', sans-serif;
   margin:0;
