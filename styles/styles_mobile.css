@@ -1,0 +1,31 @@
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer  nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer form {
+  width: 100vw;
+}
+
+input[type="email"] {
+  width: inherit;
+}
+
+.copyright {
+  text-align: center;
+}
+
+
+.box {
+  width: 92% !important;
+}

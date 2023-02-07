@@ -4,76 +4,84 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Media queries</title>
+  <title>Link Media</title>
 
-  <style>
-
-    body {
-      background-color: salmon;
-      margin: 0;
-      padding: 0;
-    }
-    .grid {
-      display: grid;
-      gap: 10px;
-    }
-    .box {
-      width: 80%;
-      height: max-content;
-      margin: auto;
-      border : 2px solid #FFFFFF;
-      padding : 20px;
-    }
-
-    .desktop-only {
-      display : block;
-      width : 500px;
-    }
-    .desktop-only {
-      margin: auto;
-    }
-
-    @media (min-width: 900px){
-      .grid {
-        grid-template-columns: repeat(4,1fr);
-      }
-    }
-
-    @media (min-width: 768px){
-      .grid {
-        grid-template-columns: repeat(2,1fr);
-      }
-    }
-    
-    @media print {
-
-      .grid {
-        grid-template-columns: repeat(4,1fr);
-        background-color: salmon;
-      }
-    }
-
-
-  </style>
+  <!-- this inline media query
+  
+    accessing the stylesheet on specific condition on a screen resolution
+  -->
+  <link rel="stylesheet" href="styles/styles_mobile.css" media="screen and (max-width:520px)">
+  
+  <link rel="stylesheet" href="styles/styles_tablet_portrait.css" media="screen and(min-width:481px) and (max-width:768px)">
+  
+  <link rel="stylesheet" href="styles/styles_tablet_horizontal.css" media="(min-width:769px) and (max-width:1024px)">
+  
+  <link rel="stylesheet" href="styles/styles_desktop.css" media="screen and (min-width:1025px)">
+  
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <div class="grid">
-    <div class="box">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis veniam repellat minima numquam ipsum obcaecati nam deleniti consequuntur excepturi tempora molestiae modi natus doloribus velit non id dolorem animi, aspernatur fugit maiores eum ullam. Aliquid ex itaque, id quidem similique distinctio voluptate doloribus molestiae dolore alias aliquam nesciunt adipisci tempora impedit explicabo consequuntur iste nobis atque aperiam ab, expedita incidunt velit. Dolorem dicta doloribus delectus eligendi, distinctio incidunt? Fugit voluptates ipsam sequi, adipisci beatae, tempora facilis tempore eligendi aut quam quisquam perspiciatis atque facere ex iure. Veniam libero aliquid fugiat?</p>
+<div class="main-container">
+  <header class="grid-item">
+    <nav>
+      <a href="" class="nav-links">home</a>
+      <a href="" class="nav-links">about</a>
+      <a href="" class="nav-links">contact</a>
+    </nav>
+  </header>
+  <main class="grid-item">
+    <section class="banner">
+      <div>
+        <p class="lead-header">Lorem, ipsum.</p>
+        <p class="lead-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae impedit quod rem culpa sapiente.</p>
+      </div>
+    </section>
+    <section class="cards">
+      <div class="card-items">
+        <img class="card-image" src="https://source.unsplash.com/random/300x300?people" alt="random 1">
+        <h3 class="card-header">Lorem, ipsum.</h3>
+        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, eius.</p>
+      </div>
+      <div class="card-items">
+        <img class="card-image" src="https://source.unsplash.com/random/300x300?animal" alt="random 1">
+        <h3 class="card-header">Lorem, ipsum.</h3>
+        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, eius.</p>
+      </div>
+      <div class="card-items">
+        <img class="card-image" src="https://source.unsplash.com/random/300x300?sky" alt="random 1">
+        <h3 class="card-header">Lorem, ipsum.</h3>
+        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, eius.</p>
+      </div>
+      <div class="card-items">
+        <img class="card-image" src="https://source.unsplash.com/random/300x300?fruit" alt="random 1">
+        <h3 class="card-header">Lorem, ipsum.</h3>
+        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, eius.</p>
+      </div>
+
+    </section>
+    <section>
+      <div class="box">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <nav >
+      <a href="">Home</a>
+      <a href="">About</a>
+      <a href="">Contact</a>
+    </nav>
+    <div class="newsletter">
+      <h3>Newsletter</h3>
+      <form action="">
+        <label for="newsletter-email">Email address</label>
+        <input type="email" placeholder="Email address" id="newsletter-email">
+        <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia iste dolore cumque adipisci illum, qui perferendis reprehenderit vero quis recusandae.</small>
+        <button>Subscribe</button>
+      </form>
     </div>
-    <div class="box">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis veniam repellat minima numquam ipsum obcaecati nam deleniti consequuntur excepturi tempora molestiae modi natus doloribus velit non id dolorem animi, aspernatur fugit maiores eum ullam. Aliquid ex itaque, id quidem similique distinctio voluptate doloribus molestiae dolore alias aliquam nesciunt adipisci tempora impedit explicabo consequuntur iste nobis atque aperiam ab, expedita incidunt velit. Dolorem dicta doloribus delectus eligendi, distinctio incidunt? Fugit voluptates ipsam sequi, adipisci beatae, tempora facilis tempore eligendi aut quam quisquam perspiciatis atque facere ex iure. Veniam libero aliquid fugiat?</p>
-    </div>
-    <div class="box">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis veniam repellat minima numquam ipsum obcaecati nam deleniti consequuntur excepturi tempora molestiae modi natus doloribus velit non id dolorem animi, aspernatur fugit maiores eum ullam. Aliquid ex itaque, id quidem similique distinctio voluptate doloribus molestiae dolore alias aliquam nesciunt adipisci tempora impedit explicabo consequuntur iste nobis atque aperiam ab, expedita incidunt velit. Dolorem dicta doloribus delectus eligendi, distinctio incidunt? Fugit voluptates ipsam sequi, adipisci beatae, tempora facilis tempore eligendi aut quam quisquam perspiciatis atque facere ex iure. Veniam libero aliquid fugiat?</p>
-    </div>
-    <div class="box">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis veniam repellat minima numquam ipsum obcaecati nam deleniti consequuntur excepturi tempora molestiae modi natus doloribus velit non id dolorem animi, aspernatur fugit maiores eum ullam. Aliquid ex itaque, id quidem similique distinctio voluptate doloribus molestiae dolore alias aliquam nesciunt adipisci tempora impedit explicabo consequuntur iste nobis atque aperiam ab, expedita incidunt velit. Dolorem dicta doloribus delectus eligendi, distinctio incidunt? Fugit voluptates ipsam sequi, adipisci beatae, tempora facilis tempore eligendi aut quam quisquam perspiciatis atque facere ex iure. Veniam libero aliquid fugiat?</p>
-    </div>
-  </div>
-  <div class="desktop-only">
-    <img src="https://source.unsplash.com/random/500x500/?mountain" alt="">
-  </div>
-  
+    <p class="copyright">&#169; Copyright 2023</p>
+  </footer>
+</div>
+
 </body>
 </html>

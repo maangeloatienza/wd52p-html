@@ -1,0 +1,153 @@
+:root {
+  --random-img : url(https://source.unsplash.com/random);
+  --main-color : salmon;
+  --main-text-color : #ffffff;
+  --secondary-text-color : #121212;
+  --card-border : #1212123a;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color : var(--main-text-color);
+}
+
+h1 {
+  color :black;
+}
+header {
+  background-color: salmon;
+  height : 90px;
+}
+
+header a {
+  text-transform: uppercase;
+  padding : 1rem;
+  font-weight: bolder;
+  text-decoration:none;
+  color : var(--main-text-color);
+}
+
+header a:hover {
+  color : var(--secondary-text-color);
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+section {
+  margin-bottom: 20px;
+  padding : 40px;
+}
+
+footer {
+  display: grid;
+  gap: 20px;
+  padding :30px 40px 10px 40px;
+  bottom: 0;
+  height: 100%;
+  background-color: var(--main-color);
+}
+
+footer nav {
+  display: flex;
+  flex-direction: column;
+}
+
+footer nav a {
+  text-decoration: none;
+  padding : 10px;
+  font-size: 1.5rem;
+  color: var(--main-text-color);
+}
+
+footer .copyright {
+  position: relative;
+  bottom:0;
+  height: 20px;
+}
+
+footer form {
+  width: 300px;
+}
+
+footer form label, footer form small {
+  display:block;
+  padding-bottom : 10px;
+}
+
+footer form button {
+  padding : 10px;
+  border-radius: 20px;
+  background-color : #ffffff;
+  color : var(--main-color);
+  outline: none;
+  font-weight:600;
+}
+
+footer form button:hover {
+  color : var(--secondary-text-color);
+}
+
+input[type="email"] {
+  min-height : 2rem;
+  display: block;
+  margin-bottom : 10px;
+}
+
+.main-container {
+  display: grid;
+}
+
+.banner {
+  background-image: var(--random-img);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding : 40px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  text-align: center;
+}
+
+.lead-header {
+  font-size: 2rem;
+}
+
+.lead-desc {
+  font-size: 0.8rem;
+}
+
+.cards {
+  display : grid;
+  gap: 20px;
+}
+
+.card-items:hover {
+  scale : 1.05;
+  transition: 150ms;
+}
+
+.card-items {
+  display: flex;
+  flex-direction: column;
+  color : var(--secondary-text-color);
+  border : 1px solid var(--card-border);
+  
+}
+
+.card-text, .card-header {
+  padding : 2px 5px 0 5px;
+}
+
+.box {
+  height : 600px;
+  width : 600px;
+  border : 2px solid black;
+  margin: auto;
+}

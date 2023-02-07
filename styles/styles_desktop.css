@@ -1,0 +1,32 @@
+
+.main-container {
+  grid-template-columns: 1fr;
+}
+
+.cards {
+  grid-template-columns: repeat(3,1fr);
+}
+
+.banner {
+  height: 400px;
+}
+footer {
+  grid-template-columns: repeat(3,1fr);
+  min-height: max-content;
+}
+
+footer > nav {
+  grid-column: 1/2
+}
+
+footer .newsletter {
+  grid-column: 2/4;
+}
+
+.copyright {
+  grid-column: 1/4;
+}
+
+.box {
+  width : 600px !important;
+}

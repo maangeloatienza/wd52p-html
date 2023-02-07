@@ -1,0 +1,39 @@
+
+
+.cards {
+  grid-template-columns: repeat(1,1fr);
+}
+
+.copyright {
+  text-align: center;
+}
+
+
+footer {
+  grid-template-columns: repeat(3,1fr);
+}
+
+footer form {
+  width: 100vw;
+}
+
+input[type="email"] {
+  width: inherit;
+}
+
+footer > nav {
+  grid-column: 1/2
+}
+
+footer .newsletter {
+  grid-column: 2/4;
+}
+
+.copyright {
+  grid-column: 1/4;
+  text-align: center;
+}
+
+.box {
+  width : 80% !important;
+}
